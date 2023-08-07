@@ -4,9 +4,6 @@ on:
     types: [published]
   workflow_dispatch:
     inputs:
-      work:
-        description: trg
-        required: false
 
 
 jobs:
