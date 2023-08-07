@@ -2,6 +2,12 @@ name: Node.js Package
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+      work:
+        description: trg
+        required: false
+
 
 jobs:
   build:
