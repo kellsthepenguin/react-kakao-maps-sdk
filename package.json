@@ -28,7 +28,12 @@
   "type": "module",
   "source": "./src/index.ts",
   "types": "./lib/@types/index.d.ts",
-  "exports": "./lib/index.modern.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.modern.js",
+      "types": "./lib/@types/index.d.ts"
+    }
+  },
   "main": "./lib/index.cjs",
   "module": "./lib/index.module.js",
   "unpkg": "./lib/index.umd.js",
